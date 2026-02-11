@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kella Professional - Hair Care</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navegação -->
+  <header class="header">
+    <div class="container header-inner">
+      <!-- LOGO -->
+      <div class="logo-area">
+        <img
+          src="image/kella-logo.jpeg" 
+          alt="Kella Professional Logo"
+          class="logo-img"
+          loading="lazy"
+        >
+        <span class="logo-text">Kella Professional</span>
+      </div>
+
+      <!-- Navegação principal -->
+      <nav class="nav">
+        <a href="#hero">Início</a>
+        <a href="#about">Sobre</a>
+        <a href="#products">Produtos</a>
+        <a href="#ritual">Ritual de Cuidado</a>
+        <a href="#contact">Contato</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Cabelos saudáveis, brilho profissional.</h1>
+        <p>
+          A Kella Professional combina tecnologia avançada com ativos nobres para
+          entregar tratamentos de salão no conforto de casa.
+        </p>
+        <div class="hero-actions">
+          <a href="#products" class="btn primary">Ver linha completa</a>
+          <a href="#about" class="btn ghost">Conhecer a marca</a>
+        </div>
+
+        <div class="hero-badges">
+          <span>Sem sal</span>
+          <span>Cruelty free</span>
+          <span>Uso profissional</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-inner">
+          <h2>Ritual Brilho Absoluto</h2>
+          <p>
+            Nutrição profunda, controle de frizz e proteção térmica em 3 passos:
+            <strong>Shampoo + Máscara + Sérum finalizador.</strong>
+          </p>
+          <ul>
+            <li>Para todos os tipos de cabelo</li>
+            <li>Com óleos nutritivos e vitaminas</li>
+            <li>Perfume suave e sofisticado</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="about" class="section about">
+    <div class="container about-inner">
+      <div class="about-text">
+        <h2>Sobre a Kella Professional</h2>
+        <p>
+          Inspirada nos rituais de beleza de salão, a Kella Professional oferece
+          fórmulas desenvolvidas por especialistas em cabelo, com foco em tratamento
+          real e resultados visíveis.
+        </p>
+        <p>
+          Nossas linhas unem ativos tecnológicos e ingredientes de origem vegetal,
+          com fragrâncias suaves, texturas leves e alta performance em todos os tipos
+          de fio.
+        </p>
+        <div class="about-highlights">
+          <div class="chip">Tecnologia capilar avançada</div>
+          <div class="chip">Testado por profissionais</div>
+          <div class="chip">Livre de testes em animais</div>
+        </div>
+      </div>
+      <div class="about-panel">
+        <div class="stat">
+          <span class="stat-number">+120K</span>
+          <span class="stat-label">Clientes satisfeitos</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">15</span>
+          <span class="stat-label">Anos de experiência</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">8</span>
+          <span class="stat-label">Linhas de tratamento</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produtos -->
+  <section id="products" class="section products">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Nossas linhas de tratamento</h2>
+        <p>Escolha a linha ideal para o seu tipo de cabelo e necessidade.</p>
+      </div>
+
+      <div class="product-filters">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="limpeza">Shampoo & Limpeza</button>
+        <button class="filter-btn" data-filter="tratamento">Tratamento profundo</button>
+        <button class="filter-btn" data-filter="finalizador">Finalizadores</button>
+      </div>
+
+      <div class="product-grid">
+        <!-- Card 1 -->
+        <article class="product-card" data-category="limpeza">
+          <h3>Shampoo Nutri Repair</h3>
+          <p class="product-tag">Limpeza equilibrada</p>
+          <p class="product-description">
+            Limpa suavemente sem ressecar os fios, mantendo o couro cabeludo
+            saudável e preparado para receber o tratamento.
+          </p>
+          <ul class="product-list">
+            <li>Com pantenol e aminoácidos</li>
+            <li>Indicado para uso diário</li>
+            <li>pH balanceado</li>
+          </ul>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="product-card" data-category="tratamento">
+          <h3>Máscara Reconstrutora Absolut</h3>
+          <p class="product-tag">Tratamento profundo</p>
+          <p class="product-description">
+            Restaura a fibra capilar e reduz a quebra, trazendo força e
+            elasticidade para cabelos danificados.
+          </p>
+          <ul class="product-list">
+            <li>Queratina vegetal</li>
+            <li>Reparação da superfície dos fios</li>
+            <li>Textura cremosa de fácil enxágue</li>
+          </ul>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="product-card" data-category="finalizador">
+          <h3>Sérum Brilho de Seda</h3>
+          <p class="product-tag">Finalização & proteção</p>
+          <p class="product-description">
+            Sela as cutículas, adiciona brilho espelhado e proteção térmica
+            sem pesar ou deixar aspecto oleoso.
+          </p>
+          <ul class="product-list">
+            <li>Controle de frizz imediato</li>
+            <li>Proteção térmica até 230ºC</li>
+            <li>Indicado para todos os tipos de cabelo</li>
+          </ul>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="product-card" data-category="tratamento">
+          <h3>Leave-in Hidra Balance</h3>
+          <p class="product-tag">Hidratação diária</p>
+          <p class="product-description">
+            Creme leve que hidrata, desembaraça e protege os fios da
+            ação externa, ideal para finalização rápida.
+          </p>
+          <ul class="product-list">
+            <li>Com aloe vera e vitaminas</li>
+            <li>Define ondas e cachos</li>
+            <li>Sem enxágue</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ritual de Cuidado -->
+  <section id="ritual" class="section ritual">
+    <div class="container ritual-inner">
+      <div class="ritual-text">
+        <h2>Seu ritual de cuidado em 3 passos</h2>
+        <ol>
+          <li>
+            <strong>Limpar:</strong> aplique o shampoo no couro cabeludo e
+            massageie suavemente, puxando a espuma para o comprimento.
+          </li>
+          <li>
+            <strong>Tratar:</strong> com os fios úmidos, distribua a máscara do
+            meio para as pontas, deixe agir alguns minutos e enxágue bem.
+          </li>
+          <li>
+            <strong>Finalizar:</strong> utilize o sérum ou leave-in nos fios
+            úmidos ou secos para proteger, alinhar e dar brilho.
+          </li>
+        </ol>
+      </div>
+      <div class="ritual-panel">
+        <p>
+          Dica da Kella: finalize com movimentos leves nas pontas para selar as
+          cutículas e garantir um acabamento polido e profissional.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-heading">
+        <h2>O que dizem os profissionais</h2>
+      </div>
+
+      <div class="testimonial-slider">
+        <div class="testimonial active">
+          <p>
+            “A linha Kella Professional transformou meu atendimento no salão.
+            Os clientes sentem a diferença na primeira aplicação.”
+          </p>
+          <span class="testimonial-name">Ana Souza</span>
+          <span class="testimonial-role">Cabeleireira & colorista</span>
+        </div>
+
+        <div class="testimonial">
+          <p>
+            “As fórmulas têm um equilíbrio perfeito entre tratamento intenso e
+            leveza. Os fios ficam alinhados, mas com movimento.”
+          </p>
+          <span class="testimonial-name">Marcos Lima</span>
+          <span class="testimonial-role">Especialista em cabelos lisos</span>
+        </div>
+
+        <div class="testimonial">
+          <p>
+            “Recomendo para os meus clientes levarem para casa. É manter o
+            padrão de salão no dia a dia.”
+          </p>
+          <span class="testimonial-name">Carla Menezes</span>
+          <span class="testimonial-role">Hair stylist</span>
+        </div>
+
+        <div class="slider-dots">
+          <button class="dot active" data-index="0" aria-label="Depoimento 1"></button>
+          <button class="dot" data-index="1" aria-label="Depoimento 2"></button>
+          <button class="dot" data-index="2" aria-label="Depoimento 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contact" class="section contact">
+    <div class="container contact-inner">
+      <div class="contact-text">
+        <h2>Fale com a Kella Professional</h2>
+        <p>
+          Gostaria de revender nossos produtos ou tirar dúvidas sobre alguma linha?
+          Envie uma mensagem e retornaremos o mais breve possível.
+        </p>
+        <ul class="contact-info">
+          <li><strong>E-mail:</strong> contato@kellaprofessional.com</li>
+          <li><strong>Telefone:</strong> (00) 0000-0000</li>
+          <li><strong>Horário:</strong> Seg a Sex, das 9h às 18h</li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contact-form">
+        <div class="field">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+        </div>
+
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+        </div>
+
+        <div class="field">
+          <label for="assunto">Assunto</label>
+          <input type="text" id="assunto" name="assunto" placeholder="Revenda, dúvida, parceria..." required>
+        </div>
+
+        <div class="field">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem aqui" required></textarea>
+        </div>
+
+        <button type="submit" class="btn primary full">Enviar mensagem</button>
+        <p class="form-feedback" id="form-feedback"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Kella Professional. Todos os direitos reservados.</p>
+      <p class="footer-note">Desenvolvido para fins de demonstração.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
